@@ -1,0 +1,427 @@
+body {
+    background-color: #fbfafb;
+    font-family: "cormorant garamond", Garamond, 'Times New Roman', Times, serif;
+    color: #313638;
+    text-shadow: .5px .5px 2px rgba(49,54,56,.1);
+    /*filter: text-shadow 10px 10px 10px rgba(49,54,56,1);*/
+    font-size: 22px;
+}
+
+/*p {
+    font-family: "cormorant garamond", Garamond, 'Times New Roman', Times, serif;
+    color: #313638;
+    text-shadow: .5px .5px 2px rgba(49,54,56,.1);
+    font-size: 22px;
+}*/
+
+/* style guide #e7372d red, #32004b purple, #c78fb7 lavender, #fbfafb background*/
+
+header {
+  background-color: #32004b; 
+  color: #fbfafb;
+
+}
+
+.nav_desktop {
+  padding: 10px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+}
+
+.logo_desktop {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 4px;
+}
+
+header ul {
+  list-style: none;
+  float: right;
+  min-width: 500px;
+  margin: auto;
+  margin-right: -140px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+header li {
+  float:left;
+  text-align: right;
+  padding: 0px 10px;
+  min-width: 30px;
+  justify-content: space-between;
+  flex-wrap: none;
+  font-size: 18px;
+}
+
+.nav_mobile {
+  padding: 10px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+}
+
+.logo_mobile { 
+  display: block; 
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  padding-left: 19%;
+}
+
+header table {
+  float: right;
+  width: 80px;
+  height: 70px;
+  padding: 20px;  
+}
+
+/*header table .purple {
+  float: right;
+  height: 30px;
+}*/
+
+header table tr {
+  background-color: #fbfafb;
+}
+
+.purple {
+  background-color: #32004b;
+  height: .5px;
+}
+
+.shakespeare_hero_image_desktop img {
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  align-items: center;
+  text-align: center;
+  padding: auto;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.shakespeare_hero_image_mobile {
+  height: 200px;
+  padding: 25px;
+}
+
+#heromobile {
+  width: 150px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #32004b;
+  padding: 0px 50px 80px 0;
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  list-style:none;
+}
+
+footer ul li {
+  padding: 3px;
+  text-align: left;
+  color:#fbfafb;
+}
+
+.h1_black{
+  font-family: pixel miners;
+  font-size: 70px;
+  color: black;
+}
+
+.h1_red {
+  font-family: pixel miners;
+  font-size: 70px;
+  color: #e7372d;
+}
+
+.h1_white{
+  font-family: pixel miners;
+  font-size: 70px;
+  color: white;
+}
+
+.p1 {
+  color: #fbfafb;
+  padding-left: 30px;
+}
+
+.intro_section{
+  margin-bottom: 40px;
+  margin-left: 120px;
+}
+
+.illuminated_letter_container {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 180px;
+  text-align: center;
+  float: left;
+  vertical-align: top;
+}
+
+.illuminated_letter {
+  font-family: Grenze Gotisch;
+  font-size: 200px;
+  transform: translateY(-260px);
+}
+
+.intro_copy {
+  width: 82%;
+  line-height: 1.8em;
+  margin-bottom: 90px;
+}
+
+.bar1_mobile {
+  width: 50px;
+  height: 450px;
+  float: left;
+  margin-right: 40px;
+  background-color: #e7372d;
+}
+
+.quote1_mobile {
+  font-family: arno pro;
+  font-style: italic;
+  font-weight: semibold;
+  color: black;
+  font-size: 28px;
+  line-height: 1.4em;
+  margin-bottom: 150px;
+}
+
+.bar1_desktop {
+  width: 450px;
+  height: 500px;
+  float: left;
+  background-color: #e7372d;
+  position:relative;
+}
+
+.quote1_desktop {
+  font-family: arno pro;
+  font-style: italic;
+  font-weight: semibold;
+  color: black;
+  font-size: 32px;
+  line-height: 1.4em;
+  margin-bottom: 150px;
+
+}
+
+.containergrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "Tempest Tempest Tempest Much_Ado Much_Ado"
+  "Alls_Well Alls_Well Alls_Well Much_Ado Much_Ado"
+  "King_Lear King_Lear Julius_Caesar Julius_Caesar Comedy"
+  "Richard Richard Richard Richard Comedy";
+  height: 600px;
+  font-size: 50px;
+  color:white;
+  grid-gap: 15px;
+}
+
+.Tempest {
+  background-color: #e7372d;
+  border-radius: 80px;
+  text-align: center;
+  vertical-align: middle;
+  grid-area: Tempest;
+  padding-top: 30px;
+}
+
+.Much_Ado {
+  background-color: #c78fb7;
+  border-radius: 80px;
+  grid-area: Much_Ado;
+  text-align: right;
+  vertical-align: middle;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+
+.Alls_Well { 
+  background-color: #32004b;
+  border-radius: 40px;
+  grid-area: Alls_Well;
+  text-align: left;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-left: 24%;
+}
+
+.King_Lear {
+  background-color: #e7372d;
+  border-radius: 40px;
+  grid-area: King_Lear;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+}
+
+.Julius_Caesar {
+  background-color: #32004b;
+  border-radius: 80px;
+  grid-area: Julius_Caesar;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+}
+
+.Comedy {
+  background-color: #e7372d;
+  border-radius: 80px;
+  grid-area: Comedy;
+  writing-mode:vertical-rl;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px 40px 20px 0;
+}
+
+.Richard {
+  background-color: #c78fb7;
+  border-radius: 40px;
+  grid-area: Richard;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 40px;
+}
+
+.quote2_containter {
+  background-color: #32004b;
+  margin:2%;
+  padding-top: 90px;
+  padding-left: 18%;
+  padding-right: 1%;
+  padding-bottom: 100px;
+  color: white;
+  margin-bottom: 180px;
+  margin-top: 200px;
+}
+
+.quote2 {
+  font-family: arno pro;
+  font-style: italic;
+  font-weight: semibold;
+  font-size: 32px;
+  width: 60%;
+  line-height: 1.4em;
+}
+
+.comedy_container {
+  background-color: #e7372d;
+  width: 500px;
+  height: 500px;
+  /*-moz-border-radius: 50%;
+  -webkit-border-radius: 50%;*/
+  border-radius: 50%;
+}
+
+.comedy_container svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 66vmin;
+  transform-origin: center;
+  width: 66%;
+  transform: rotate(180degrees);
+}
+
+.tragedy_container {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  /*-moz-border-radius: 50%;
+  -webkit-border-radius: 50%;*/
+  border-radius: 50%;
+  color: white;
+
+}
+
+.tragedy_container svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 66vmin;
+  transform-origin: center;
+  width: 66%;
+}
+
+
+
+
+/*-----------------*/
+@media only screen 
+  and (min-width: 150px) 
+  and (max-width: 900px)
+   {
+    .logo_desktop {
+      display:none;
+    }
+    
+    .nav_desktop {
+      display:none;
+    }
+
+    .shakespeare_hero_image_desktop {
+        display:none;
+      }
+
+    .bar1_desktop{
+      display:none;
+    }
+
+    .quote1_desktop {
+      display:none;
+    }
+
+    }
+
+    @media only screen 
+    and (min-width: 901px) 
+    and (max-width: 2000px)
+     {
+      .logo_mobile {
+        display:none;
+      }
+      
+      .nav_mobile {
+        display:none;
+      }
+
+      .shakespeare_hero_image_mobile {
+        display:none;
+      }
+
+      .bar1_mobile {
+        display:none;
+      }
+
+      .quote1_mobile {
+        display:none;
+      }
+
+      }
