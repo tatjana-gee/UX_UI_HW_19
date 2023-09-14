@@ -4,6 +4,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #fbfafb;
     font-family: 'Cormorant Garamond', Garamond, 'Times New Roman', Times, serif, 'Grenze Gotisch', cursive;
     color: #313638;
@@ -21,17 +23,18 @@ body {
 
 /* style guide #e7372d red, #32004b purple, #c78fb7 lavender, #c7a9be light lavender #fbfafb background*/
 
+
 header {
   background-color: #32004b; 
   color: #fbfafb;
-
 }
+
 
 .nav_desktop {
   padding: 10px;
-  display: flex; 
+  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
   height: 80px;
 }
 
@@ -46,25 +49,23 @@ header {
   width:300px;
 }
 
-header ul {
+#desktop_nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#desktop_nav ul {
   list-style: none;
-  float: right;
-  min-width: 500px;
-  margin: auto;
-  margin-right: -140px;
-  padding-right: 20px;
-  padding-left: 20px;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 header li {
-  float:left;
   text-align: right;
   padding: 0px 10px;
   min-width: 30px;
-  justify-content: space-between;
-  flex-wrap: none;
   font-size: 18px;
-  
 }
 
 
@@ -99,10 +100,12 @@ header table {
   padding: 20px;  
 }
 
-/*header table .purple {
+/*
+header table .purple {
   float: right;
   height: 30px;
-}*/
+}
+*/
 
 header table tr {
   background-color: #fbfafb;
@@ -220,7 +223,7 @@ h3{
 
 .p1 {
   color: #fbfafb;
-  margin:auto;
+  margin: auto;
   text-align: center;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
@@ -385,7 +388,6 @@ h3{
 
 .quote2_container {
   background-color: #32004b;
-  margin:2%;
   padding-top: 90px;
   padding-left: 18%;
   padding-right: 1%;
